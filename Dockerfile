@@ -6,7 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 # Set the working directory inside the container
-WORKDIR /frontend
+WORKDIR /chatbot
 
 # Copy the dependencies file to the working directory
 COPY requirements.txt .
@@ -15,11 +15,11 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 RUN pip install python-dotenv
 
-# Copy the current directory contents into the container at /frontend
-COPY . /frontend
+
+COPY . /chatbot
 
 # Copy the .env file
-# COPY .env /frontend/.env
+
 
 
 # Run Django migrations and collect static files
