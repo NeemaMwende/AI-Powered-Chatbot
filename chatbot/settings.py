@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'frontend.urls'
+ROOT_URLCONF = 'chatbotapp.urls'
 
 TEMPLATES = [
     {
@@ -79,7 +79,7 @@ CHANNEL_LAYERS = {
     },
 }
 
-WSGI_APPLICATION = 'frontend.wsgi.application'
+WSGI_APPLICATION = 'chatbot.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -127,14 +127,14 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # settings.py
 
 # Define the path where Django will collect static files.
-STATIC_ROOT = '/frontend/staticfiles/'
+STATIC_ROOT = '/chatbotapp/staticfiles/'
 
 # Define the URL prefix for static files.
 
 
 # Add the following line at the end of the file to serve static files locally in development.
 STATICFILES_DIRS = [
-    '/frontend/static/',
+    '/chatbotapp/static/',
 ]
 
 # Default primary key field type
