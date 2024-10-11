@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-s6b4uq5l)%(rtvd%dq)nsj2188$%!td-p(qqxw&w%d$&vn1y#o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost','ai-powered-chatbot-ife6.onrender.com', '127.0.0.1']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost','ai-powered-chatbot-ife6.onrender.com', '127.0.0.1', '*']
 
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8000",
